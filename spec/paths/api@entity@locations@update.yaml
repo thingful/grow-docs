@@ -1,0 +1,29 @@
+patch:
+  summary: Update sensor location
+  description: This action updates an existing sensor latitude and longitude parameters according to the values set in the request body. Once location is updated new measurements collected from the sensor will be associated with the new latitude and longitude values. Existing measurements will not be affected.
+  tags: 
+    - Location
+  consumes:
+    - application/json
+  responses:
+    200: 
+      description: OK
+      schema: 
+        $ref: "#/definitions/Location"
+    400:
+      description: Bad request
+      schema:
+        $ref: "#/definitions/Error400"
+    404:
+      description: Sensor not found
+      schema:
+        $ref: "#/definitions/Error404"
+    422:
+      description: Unprocessable entity
+      schema:
+        $ref: "#/definitions/Error422"
+    500:
+      description: Internal server error
+      schema:
+        $ref: "#/definitions/Error500"
+

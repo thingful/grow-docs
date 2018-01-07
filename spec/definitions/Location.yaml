@@ -1,0 +1,45 @@
+type: object
+properties:
+  Code:
+    type: string
+    description: the short sensor unique identifier
+    example: zg9xr321
+  DataSourceGroupCode:
+    type: string
+    description: the data source group the sensor belongs to
+    example: Grow.Thingful
+  Identifier:
+    type: string
+    description: the long sensor identifer 
+    example: Grow.Thingful#zg9xr321
+  Name:
+    type: string
+    description: the sensor name set by the user 
+    example: my sensor
+  LocationId:
+    type: number
+    example: 115
+  ProjectionId:
+    type: integer
+    example: 3
+  X: 
+    type: number
+    description: the sensor longitude 
+    example: 51.500152
+  Y:
+    type: number
+    description: the sensor latitude 
+    example: -0.126236
+  Z:
+    type: number
+    description: the sensor elevation
+    example: 0
+  FirstSampleTimestamp:
+    type: integer
+    description: the timestamp of the first available measurement in yyyymmddhhmmss format (UTC)
+    example: 20170101220841
+  LastFetchedSampleTimestamp:
+    type: integer  
+    description: the timestamp of the last collected measurement in yyyymmddhhmmss format (UTC)
+    example: 20171211153025
+

@@ -1,0 +1,29 @@
+swagger: '2.0'
+info:
+  version: '0.1.0'
+  title: Thingful GROW Node REST API
+  contact:
+    name: Marco
+    url: 'https://thingful.net/site/contact/'
+    email: marco@thingful.net
+  license:
+    name: MIT
+    url: 'https://opensource.org/licenses/MIT'
+  x-logo:
+    url: ''
+    backgroundColor: '#0033A0'
+  description: >
+    # Introduction
+
+    <p>The Thingful GROW Node API is a RESTful API built according to the HydroNet4 standards.</p> 
+
+    <p>Clients must be authenticated in order to access the API. Please contact dev@thingful.net or marco@thingful.net to request an API key.</p>
+
+security:
+  - Bearer: []
+  
+securityDefinitions:
+  Bearer:
+    type: apiKey
+    in: header
+    name: Authorization

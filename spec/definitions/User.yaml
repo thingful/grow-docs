@@ -1,0 +1,26 @@
+type: object
+properties:
+  User:
+    type: object
+    required: 
+      - Identifier 
+      - AccessToken 
+    properties:
+      Identifier: 
+        type: string
+        description: the user unique identifier
+        example: foobar123
+      Provider:
+        type: string
+        description: the name of the upstream data provider
+        example: parrot
+      AccessToken:
+        type: string
+        description: the opaque string used to identify the user when making data requests against the upstream provider
+        example: wqnD1Vdn9GO8LdRbEEqvcOce18sECKEQeGAptKH78KGPcbxL
+      RefereshToken:
+        description: the optional refresh token used to refresh an expired access token
+        type: string
+        example: 8WE7m1vWpt2BT6Q3XLDzqYa6ncLdUCYuv8ZhBhKvdie5rwxX
+
+

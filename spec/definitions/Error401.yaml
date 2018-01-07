@@ -1,0 +1,13 @@
+type: object
+properties:
+  Exception:
+    type: object 
+    properties:
+      Name: 
+        type: integer
+        description: the http status code
+        example: 401
+      Message:
+        type: string
+        description: a brief description of the error occurred
+        example: Description of the error

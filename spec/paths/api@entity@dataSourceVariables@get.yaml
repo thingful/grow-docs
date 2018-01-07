@@ -1,0 +1,16 @@
+post:
+  summary: List data sources variables metadata
+  description: This action returns metadata (identifiers, units, data types) about the available data sources or data channels captured by the Node. 
+  tags: 
+    - Data Source Variables
+  consumes:
+    - application/json
+  responses:
+    200: 
+      description: OK
+      schema: 
+        $ref: "#/definitions/DataSourceVar"
+    500:
+      description: Internal server error
+      schema:
+        $ref: "#/definitions/Error500"

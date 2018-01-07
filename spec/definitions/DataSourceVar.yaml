@@ -1,0 +1,79 @@
+type: object
+properties:
+  DataSourceVariables:
+    type: object 
+    properties:
+      1: 
+        type: object
+        properties:
+          DataSourceVariableId:
+            type: integer
+            example: 1
+          VariableCode:
+            type: string
+            example: Thingful.Connectors.GROWSensors.soil_moisture 
+          DataSourceCode:
+            type: string
+            example: Thingful.Connectors.GROWSensors
+          Name:
+            type: string
+            example: Soil Moisture
+          Code: 
+            type: string 
+            example: soil_moisture 
+          UnitCode:
+            type: string
+            example: "%"
+          DataType:
+            type: string
+            example: Double
+          MathematicalType:
+            type: string
+            example: NotSummable
+          MeasurementType:
+            type: string
+            example: Instantaneous
+          State: 
+            type: integer
+            example: 1
+          IsCumulative:
+            type: boolean
+            example: false
+      2: 
+        type: object
+        properties:
+          DataSourceVariableId:
+            type: integer
+            example: 2
+          VariableCode:
+            type: string
+            example: Thingful.Connectors.GROWSensors.light
+          DataSourceCode:
+            type: string
+            example: Thingful.Connectors.GROWSensors
+          Name:
+            type: string
+            example: Light
+          Code: 
+            type: string 
+            example: light
+          UnitCode:
+            type: string
+            example: "mol/m2/d"
+          DataType:
+            type: string
+            example: Double
+          MathematicalType:
+            type: string
+            example: NotSummable
+          MeasurementType:
+            type: string
+            example: Instantaneous
+          State: 
+            type: integer
+            example: 1
+          IsCumulative:
+            type: boolean
+            example: false
+
+

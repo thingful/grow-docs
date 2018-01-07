@@ -1,0 +1,45 @@
+post:
+  summary: List the available sensors location
+  description: This action returns the sensors locations, optionally filtered by the senson(s) owner.
+  tags: 
+    - Location
+  consumes:
+    - application/json
+  parameters:
+    - in: body
+      schema:
+        type: object
+        required:
+          - DataSourceCodes
+        properties:
+          DataSourceCodes:
+            $ref: "#/definitions/DataSourceCodes"
+          UserId:
+            type: string
+            description: The optional user identifier
+            example: foobar123
+  responses:
+    200: 
+      description: OK       
+      schema:
+        type: object
+        properties:
+          Locations:
+            type: object
+            properties:
+              Grow.Thingful#zg9xr321:
+                description: the location identifier
+                $ref: "#/definitions/Location" 
+    400:
+      description: Bad request
+      schema:
+        $ref: "#/definitions/Error400"
+    422:
+      description: Unprocessable entity
+      schema:
+        $ref: "#/definitions/Error422"
+    500:
+      description: Internal server error
+      schema:
+        $ref: "#/definitions/Error500"
+
