@@ -1,0 +1,10 @@
+{
+  "generator-openapi-repo": {
+    "importExistingSpec": false,
+    "name": "Thingful GROW Node",
+    "repo": "Thingful/GrowDocs",
+    "splitSpec": true,
+    "samples": true,
+    "installSwaggerUI": true
+  }
+}
