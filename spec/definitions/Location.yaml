@@ -2,7 +2,7 @@ type: object
 properties:
   Code:
     type: string
-    description: the short sensor unique identifier
+    description: the short sensor identifier
     example: zg9xr321
   DataSourceGroupCode:
     type: string
@@ -15,7 +15,7 @@ properties:
   Name:
     type: string
     description: the sensor name set by the user 
-    example: my sensor
+    example: Parrot Flower Power soil sensor PI040297AA4A030551
   LocationId:
     type: number
     example: 115

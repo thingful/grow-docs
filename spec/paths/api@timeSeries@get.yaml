@@ -1,0 +1,26 @@
+post:
+  summary: Get sensor data
+  description: This action returns data from sensor(s) specified in the request body. Requests must define a time range by specifying beginning and end UTC timestamp in the yyyymmddHHMMSS format. Currently time ranges are limited to a maximum of 10 days per request.
+  tags:
+    - Measurements
+  consumes:
+    - application/json
+  parameters:
+    - in: body
+      name: timeSeriesData
+      description: the object describing the data to retrieve
+      schema:
+        $ref: "#/definitions/TimeSeriesDataReq"
+  responses:
+    200:
+      description: OK
+      schema:
+        $ref: "#/definitions/TimeSeriesData"
+    400:
+      description: Bad request
+      schema:
+        $ref: "#/definitions/Error400"
+    500:
+      description: Internal server error
+      schema:
+        $ref: "#/definitions/Error500"

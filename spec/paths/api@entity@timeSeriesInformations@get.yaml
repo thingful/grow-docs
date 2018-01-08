@@ -1,0 +1,17 @@
+post:
+  summary: List measurements metadata for the available sensors
+  description: This action returns information about the time range of the data available for each sensor by specifing a start and an end date. It is manly used by GROW internal services as a way to describe what data is accessible to client applications. 
+  tags: 
+    - Measurements
+  consumes:
+    - application/json
+  responses:
+    200:
+      description: OK
+      schema: 
+        $ref: "#/definitions/TimeSeriesInfo"
+    500:
+      description: Internal server error
+      schema:
+        $ref: "#/definitions/Error500"
+

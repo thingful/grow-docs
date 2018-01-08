@@ -1,12 +1,13 @@
 post:
   summary: List the available sensors location
   description: This action returns the sensors locations, optionally filtered by the senson(s) owner.
-  tags: 
+  tags:
     - Location
   consumes:
     - application/json
   parameters:
     - in: body
+      name: dataSourceCodes
       schema:
         type: object
         required:
@@ -19,17 +20,16 @@ post:
             description: The optional user identifier
             example: foobar123
   responses:
-    200: 
-      description: OK       
+    200:
+      description: OK
       schema:
         type: object
         properties:
           Locations:
             type: object
             properties:
-              Grow.Thingful#zg9xr321:
-                description: the location identifier
-                $ref: "#/definitions/Location" 
+              "Grow.Thingful#zg9xr321":
+                $ref: "#/definitions/Location"
     400:
       description: Bad request
       schema:
@@ -42,4 +42,3 @@ post:
       description: Internal server error
       schema:
         $ref: "#/definitions/Error500"
-

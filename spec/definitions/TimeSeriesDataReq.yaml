@@ -1,0 +1,52 @@
+type: object
+required:
+  - Readers
+properties:
+  Readers:
+    type: array
+    items:
+      type: object
+      required:
+        - DataSourceCode
+        - Settings
+      properties:
+        DataSourceCode:
+          type: string
+          description: the name of the source to query. By defualt it should be set to Thingful.Connectors.GROWSensors
+          example: "Thingful.Connectors.GROWSensors"
+        Settings:
+          type: object
+          required:
+            - LocationCodes
+            - VariableCodes
+            - StartDate
+            - EndDate
+          properties:
+            LocationCodes:
+              type: array
+              items:
+                type: string
+                description: a list of sensors shot identifiers
+                example: 9xr321
+            VariableCodes:
+              type: array
+              items:
+                type: string
+                description: a list of data source variables to retrieve
+                example: Thingful.Connectors.GROWSensors.light
+            StartDate:
+              type: string
+              description: the timestamp of the beginning of the time range to request data from
+              example: 20170329000000
+            EndDate:
+              type: string
+              description: the timestamp of the end of the time range to request data from
+              example: 20170401000000
+            StructureType:
+              type: string
+              description: the type of response. It should default to TimeSeries
+              example: TimeSeries
+            CalculationType:
+              type: string
+              description: default to None
+              example: None

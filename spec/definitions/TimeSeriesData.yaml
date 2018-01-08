@@ -1,0 +1,80 @@
+type: object
+properties:
+  StartDate:
+    type: string
+    description: the timestamp of the beginning of the time range to request data from
+    example: 20170329000000
+  EndDate:
+    type: string
+    description: the timestamp of the end of the time range to request data from
+    example: 20170401000000
+  LocationIdentifier:
+    type: string
+    description: the long sensor identifier
+    example: Grow.Thingful#9xr321
+  LocationCode:
+    type: string
+    description: the short sensor identifier
+  SensorName:
+    type: string
+    description: the sensor name set by the user
+    example: Parrot Flower Power soil sensor PI040297AA4A030551
+  SerialNumber:
+    type: string
+    description: the unique sensor serial number
+    example: PI040297AA4A030551
+  Data:
+    type: array
+    items:
+      type: object
+      properties:
+        Value:
+          type: number
+          description: the measurement value
+          example: 65.1
+        DateTime:
+          type: string
+          description: the timestamp when the value was recorded by the sensor
+          example: 20170329010115
+        Availability:
+          type: number
+          example: 1
+        Quality:
+          type: integer
+          example: 0
+  DataType:
+    type: string
+    description: the measurement concrete type
+    example: Double
+  VariableCode:
+    type: string
+    description: the measurement data source variable
+    example: Thingful.Connectors.GROWSensors.light
+  DataSourceVariableId:
+    type: integer
+    description: the identifier of the requested data source type
+    example: 2
+  NoDataValue:
+    type: number
+    example: -9999
+  CalculationType:
+    type: string
+    example: None
+  Interval:
+    type: object
+    properties:
+      Type:
+        type: string
+        example: None
+      Value:
+        type: number
+        example: 0.0
+  TimeZoneOffset:
+    type: string
+    example: "+0000"
+  IsCumulative:
+    type: boolean
+    example: false
+  UseQuality:
+    type: boolean
+    example: false

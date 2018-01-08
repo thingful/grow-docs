@@ -1,0 +1,29 @@
+type: object
+properties:
+  TimeSeriesInformations:
+    type: object
+    properties:
+      11:
+        type: object
+        properties:
+          TimeSeriesInformationId: 
+            type: integer 
+            description: the metadata object identifier 
+            example: 11
+          LocationIdentifier:
+            type: string
+            description: the sensor identifier
+            example: Grow.Thingful.9xr321
+          DataSourceVariableId: 
+            type: integer
+            description: the object data source identifier
+            example: 1
+          StartDate:
+            type: integer 
+            description: the timestamp of the first available measurement in yyyymmddhhmmss format (UTC)
+            example: 20170101220841
+          EndDate:
+            type: integer 
+            description: the timestamp of the last available measurement in yyyymmddhhmmss format (UTC)
+            example: 20171211153025
+
