@@ -1,5 +1,5 @@
 # Thingful GROW Node OpenAPI Specification
-[![Build Status](https://travis-ci.org/Thingful/GrowDocs.svg?branch=master)](https://travis-ci.org/Thingful/GrowDocs)
+[![Build Status](https://travis-ci.org/thingful/grow-docs.svg?branch=master)](https://travis-ci.org/thingful/grow-docs)
 
 ## Steps to finish
 
