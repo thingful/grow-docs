@@ -15,15 +15,16 @@ info:
   description: >
     # Introduction
 
-    <p>The Thingful GROW Node API is a RESTful API built according to the HydroNet4 standards.</p> 
+    <p>The Thingful GROW Node API is a RESTful API built according to the HydroNet4 standards.</p>
 
-    <p>Clients must be authenticated in order to access the API. Please contact dev@thingful.net or marco@thingful.net to request an API key.</p>
+    <p><b>Clients must be authenticated in order to access the API. Please contact dev@thingful.net or marco@thingful.net to request an API key.</b></p>
 
 security:
   - Bearer: []
-  
+
 securityDefinitions:
   Bearer:
     type: apiKey
+    description: The Authorization header requires its value to be set to "Bearer " followed by the API key.
     in: header
     name: Authorization
