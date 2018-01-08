@@ -4,7 +4,7 @@
     "name": "Thingful GROW Node",
     "repo": "thingful/grow-docs",
     "splitSpec": true,
-    "samples": true,
+    "samples": false,
     "installSwaggerUI": true
   }
 }
