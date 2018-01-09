@@ -2,7 +2,7 @@ patch:
   summary: Update sensor location
   description: This action updates an existing sensor latitude and longitude parameters according to the values set in the request body. Once location is updated new measurements collected from the sensor will be associated with the new latitude and longitude values. Existing measurements will not be affected.
   tags: 
-    - Location
+    - Locations
   consumes:
     - application/json
   responses:

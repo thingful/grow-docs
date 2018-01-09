@@ -1,4 +1,5 @@
 type: object
+description: an object containing the selected data source variables
 properties:
   DataSourceVariables:
     type: object 

@@ -2,7 +2,7 @@ post:
   summary: List the available sensors location
   description: This action returns the sensors locations, optionally filtered by the senson(s) owner.
   tags:
-    - Location
+    - Locations
   consumes:
     - application/json
   parameters:

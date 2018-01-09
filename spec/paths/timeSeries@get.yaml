@@ -15,7 +15,12 @@ post:
     200:
       description: OK
       schema:
-        $ref: "#/definitions/TimeSeriesData"
+        type: object
+        properties:
+          Data:
+            $ref: "#/definitions/TimeSeriesData"
+          Meta:
+            $ref: "#/definitions/TimeSeriesMeta"
     400:
       description: Bad request
       schema:

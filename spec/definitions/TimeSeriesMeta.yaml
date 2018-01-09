@@ -1,3 +1,46 @@
-type: array
-items:
-  type: string
+type: object
+properties:
+  Locations:
+    type: object
+    description: the sensor location
+    properties:
+      9xr321:
+        type: object
+        properties:
+          Identifier:
+            type: string
+            description: the long sensor identifier
+            example: Grow.Thingful#9xr321
+          Name:
+            type: string
+            description: the sensor name
+            example: Parrot Flower Power soil sensor PI040297AA4A030551
+          DataSourceGroupCode:
+            type: string 
+            example: Grow.Thingful 
+          Code:
+            type: string
+            description: the short sensor identifier
+            example: 9xr321 
+          X:
+            type: number
+            description: the sensor longitude
+            example: -0.084101
+          Y:
+            type: number
+            description: the sensor latitude
+            example: 51.552338
+          Z:
+            type: number
+            description: the sensor elevation 
+          ProjectionId:
+            type: integer
+            example: 3
+  Variables:
+    $ref: "#/definitions/Variable"
+  DataSourceVariables:
+    $ref: "#/definitions/DataSourceVar"
+  Projections:
+    $ref: "#/definitions/Projections"
+  Units:
+    $ref: "#/definitions/Units"
