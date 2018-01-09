@@ -1,0 +1,18 @@
+type: object
+description: the definition of the geographical projection system
+properties:
+  3:
+    type: object
+    properties:
+      ProjectionId:
+        type: integer 
+        example: 3
+      Name:
+        type: string
+        example: WGS84
+      Epsg:
+        type: integer
+        example: 4326
+      ProjectionString:
+        type: string
+        example: "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs "

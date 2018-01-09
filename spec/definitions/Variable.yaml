@@ -1,0 +1,25 @@
+type: object
+description: an object containing the selected data variables identified by their long indentifier
+properties:
+  Thingful.Connectors.GROWSensors.light:
+    type: object
+    description: the variable key
+    properties:
+      State:
+        type: integer
+        example: 1
+      Name:
+        type: string
+        description: the variable short identifier
+        example: Light 
+      Code:
+        type: string
+        description: the variable long identifier
+        example: Thingful.Connectors.GROWSensors.light 
+      UnitCode:
+        type: string
+        description: the variable unit of measurement 
+        example: mol/m2/d
+      VariableId:
+        type: integer
+        example: 1

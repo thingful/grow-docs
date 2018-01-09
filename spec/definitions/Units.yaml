@@ -1,0 +1,16 @@
+type: object
+description: an object containing units of measurements of the selected data source variables
+properties:
+  mol/m2/d:
+    type: object
+    properties:
+      Name: 
+        type: string
+        description: the unit name
+        example: "mol/m2/d"
+      Code:
+        type: string
+        description: the unit code
+        example: "mol/m2/d"
+
+
