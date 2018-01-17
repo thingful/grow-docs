@@ -10,14 +10,28 @@
     + YAML https://thingful.github.io/grow-docs/swagger.yaml
 - Preview spec version for branch `[branch]`: https://thingful.github.io/grow-docs/preview/[branch]
 
-**Warning:** All above links are updated only after Travis CI finishes deployment
-
 ## Working on specification
 ### Install
 
 1. Install [Node JS](https://nodejs.org/)
 2. Clone repo and `cd`
     + Run `npm install`
+
+### Install using Docker
+1. Install [Docker](https://docs.docker.com/engine/installation/)
+2. Build the Docker images
+```
+docker build -t thingful/grow-docs .
+```
+3. Run the image
+```
+docker run --name thingful-grow-docs -v `pwd`:/src/app -p 3000:3000 -p 5000:5000 -d thingful/grow-docs
+```
+Shortcuts are available for make users. Run 
+```
+make help
+```
+to see the available commands.
 
 ### Usage
 
