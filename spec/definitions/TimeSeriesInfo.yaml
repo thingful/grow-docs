@@ -19,11 +19,11 @@ properties:
             description: the object data source identifier
             example: 1
           StartDate:
-            type: integer 
+            type: string 
             description: the timestamp of the first available measurement in yyyymmddhhmmss format (UTC)
-            example: 20170101220841
+            example: "20170101220841"
           EndDate:
-            type: integer 
+            type: string
             description: the timestamp of the last available measurement in yyyymmddhhmmss format (UTC)
-            example: 20171211153025
+            example: "20171211153025"
 

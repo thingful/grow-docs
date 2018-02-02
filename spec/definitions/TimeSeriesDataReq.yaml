@@ -37,11 +37,11 @@ properties:
             StartDate:
               type: string
               description: the timestamp of the beginning of the time range to request data from
-              example: 20170329000000
+              example: "20170329000000"
             EndDate:
               type: string
               description: the timestamp of the end of the time range to request data from
-              example: 20170401000000
+              example: "20170401000000"
             StructureType:
               type: string
               description: the type of response. It should default to TimeSeries
