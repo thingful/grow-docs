@@ -1,14 +1,14 @@
 # Thingful GROW Node OpenAPI Specification
-[![Build Status](https://travis-ci.org/thingful/grow-docs.svg?branch=master)](https://travis-ci.org/thingful/grow-docs)
+[![Build Status](https://travis-ci.org/growobservatory/ThingfulNode.svg?branch=master)](https://travis-ci.org/growobservatory/ThingfulNode)
 
 ## Links
 
-- Documentation(ReDoc): https://thingful.github.io/grow-docs/
-- SwaggerUI: https://thingful.github.io/grow-docs/swagger-ui/
+- Documentation(ReDoc): https://growobservatory.github.io/ThingfulNode/
+- SwaggerUI: https://growobservatory.github.io/ThingfulNode/swagger-ui/
 - Look full spec:
-    + JSON https://thingful.github.io/grow-docs/swagger.json
-    + YAML https://thingful.github.io/grow-docs/swagger.yaml
-- Preview spec version for branch `[branch]`: https://thingful.github.io/grow-docs/preview/[branch]
+    + JSON https://growobservatory.github.io/ThingfulNode/swagger.json
+    + YAML https://growobservatory.github.io/ThingfulNode/swagger.yaml
+- Preview spec version for branch `[branch]`: https://growobservatory.github.io/ThingfulNode/preview/[branch]
 
 ## Working on specification
 ### Install
@@ -27,7 +27,7 @@ docker build -t thingful/grow-docs .
 ```
 docker run --name thingful-grow-docs -v `pwd`:/src/app -p 3000:3000 -p 5000:5000 -d thingful/grow-docs
 ```
-Shortcuts are available for make users. Run 
+Shortcuts are available for make users. Run
 ```
 make help
 ```
@@ -36,7 +36,7 @@ to see the available commands.
 ### Usage
 
 1. Run `npm start`
-2. Checkout console output to see where local server is started. You can use all [links](#links) (except `preview`) by replacing https://thingful.github.io/grow-docs/ with url from the message: `Server started <url>`
+2. Checkout console output to see where local server is started. You can use all [links](#links) (except `preview`) by replacing https://growobservatory.github.io/ThingfulNode/ with url from the message: `Server started <url>`
 3. Make changes using your favorite editor or `swagger-editor` (look for URL in console output)
 4. All changes are immediately propagated to your local server, moreover all documentation pages will be automagically refreshed in a browser after each change
 **TIP:** you can open `swagger-editor`, documentation and `swagger-ui` in parallel
