@@ -42,6 +42,10 @@ properties:
               type: string
               description: the timestamp of the end of the time range to request data from
               example: "20170401000000"
+            Order:
+              type: string
+              description: the order by which data samples are returned. By default samples are returned in a descending order. To order them in an ascending order this option must be set to "asc"
+              example: "asc"
             StructureType:
               type: string
               description: the type of response. It should default to TimeSeries
