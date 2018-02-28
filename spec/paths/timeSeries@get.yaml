@@ -1,6 +1,6 @@
 post:
   summary: Get sensor data
-  description: This action returns data from sensor(s) specified in the request body. Requests must define a time range by specifying beginning and end UTC timestamp in the yyyymmddHHMMSS format. Currently time ranges are limited to a maximum of 10 days per request.
+  description: This action returns data from sensor(s) specified in the request body. Requests must define a time range by specifying beginning and end UTC timestamp in the yyyymmddHHMMSS format. Currently time ranges are limited to a maximum of 10 days per request. Data samples are returned in descending order (from the most recent to the oldest one) unless otherwise specified.
   tags:
     - Measurements
   consumes:
