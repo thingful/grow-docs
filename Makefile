@@ -22,7 +22,7 @@ docker-build: ## build the docker image, installs the required packages and tags
 	docker build -t thingful/grow-docs .
 
 .PHONY: docker-dev
-docker-dev: ## run the docker container and mounts the app directory on the container.
+docker-dev: ## run the docker container and mounts the app directory on the container. Host ports can be overridden by using the 'docs_port' and 'swagger_port' options.
 	docker run --name thingful-grow-docs \
 		-v `pwd`:/src/app -p $(HOST_DOCS_PORT):$(DOCKER_DOCS_PORT) \
 		-p $(HOST_SWAGGER_PORT):$(DOCKER_SWAGGER_PORT) \
